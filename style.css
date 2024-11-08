@@ -17,6 +17,8 @@ body {
 
 .kanban {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 14px;
   padding: 24px;
   width: 100%;
@@ -36,6 +38,7 @@ body {
   padding: 12px;
   overflow: hidden;
   position: relative;
+  min-width: 252px;
 }
 
 .kanban-column::after {
@@ -98,6 +101,7 @@ body {
 .kanban-card {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   background-color: #ffffff;
   border-radius: 14px;
   padding: 10px;
@@ -145,6 +149,10 @@ body {
   height: 42px;
   border-radius: 100%;
   object-fit: cover;
+}
+
+.dragging {
+  opacity: 0.5;
 }
 
 .cards-hover {
